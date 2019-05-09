@@ -32,6 +32,8 @@ router.post('/tweets', function(req, res) {
   res.redirect('/');
 });
 
+io.sockets.emit('newTweet', {  });
+
 return router;
 
 }
